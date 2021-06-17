@@ -1,0 +1,58 @@
+/* Color Theme Swatches in Hex */
+$Chalk-lettering-1-hex: #BF907E;
+$Chalk-lettering-2-hex: #A63117;
+$Chalk-lettering-3-hex: #F2F2F2;
+$Chalk-lettering-4-hex: #595959;
+$Chalk-lettering-5-hex: #0D0D0D;
+
+
+.homePage,
+.page {
+    padding-bottom: 50px;
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    h2.heading {
+        font-size: 28px;
+        margin: 30px 20px 10px;
+    }
+
+    p.text {
+        font-size: 18px;
+        margin: 20px 20px;
+        text-indent: 20px;
+        line-height: 24px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            // text-decoration: underline;
+            color: $Chalk-lettering-2-hex;
+        }
+    }
+}
+
+.homePage {
+    .quote {
+        text-align: center;
+        margin: 20px 140px 20px;
+        padding-bottom: 40px;
+        border-bottom: 1px $Chalk-lettering-4-hex solid;
+        color: $Chalk-lettering-4-hex;
+
+        h2.quote-heading {
+            margin: 0 60px;
+        }
+
+        p {
+            text-align: right;
+        }
+    }
+}

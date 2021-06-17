@@ -1,0 +1,91 @@
+/* Color Theme Swatches in Hex */
+$Chalk-lettering-1-hex: #BF907E;
+$Chalk-lettering-2-hex: #A63117;
+$Chalk-lettering-3-hex: #F2F2F2;
+$Chalk-lettering-4-hex: #595959;
+$Chalk-lettering-5-hex: #0D0D0D;
+
+.main-line {
+    // position: absolute;
+    background-color: $Chalk-lettering-3-hex;
+    width: 20px;
+    height: 100%;
+}
+
+.profile {
+    text-align: center;
+
+    p,
+    h2 {
+        color: black;
+    }
+}
+
+.logoContainer {
+    flex-grow: 1;
+    min-height: 240px;
+    max-height: 240px;
+
+    .underLogo {
+        position: relative;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        background-color: $Chalk-lettering-3-hex;
+        width: 156px;
+        height: 156px;
+        border: 1.5px $Chalk-lettering-5-hex solid;
+        border-radius: 50%;
+
+
+        .logo {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(../../images/ourPhoto.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1.5px $Chalk-lettering-5-hex solid
+        }
+    }
+}
+
+nav.navigation {
+    background-color: #fff;
+    height: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+
+    ul {
+        margin-top: 40px;
+        height: 60%;
+        flex-grow: 1;
+    }
+}
+
+.navigation ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+        color: black;
+        text-decoration: none;
+        line-height: 40px;
+        font-size: 24px;
+        transition: .3s;
+        padding-left: 30px;
+    }
+
+    a:hover {
+        color: $Chalk-lettering-2-hex;
+    }
+}
