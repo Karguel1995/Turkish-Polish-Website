@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Turkish-Polish-Website/static/css/main.c3aea914.chunk.css",
-    "main.js": "/Turkish-Polish-Website/static/js/main.7c0f4ecb.chunk.js",
-    "main.js.map": "/Turkish-Polish-Website/static/js/main.7c0f4ecb.chunk.js.map",
+    "main.js": "/Turkish-Polish-Website/static/js/main.64d9698f.chunk.js",
+    "main.js.map": "/Turkish-Polish-Website/static/js/main.64d9698f.chunk.js.map",
     "runtime-main.js": "/Turkish-Polish-Website/static/js/runtime-main.f6586997.js",
     "runtime-main.js.map": "/Turkish-Polish-Website/static/js/runtime-main.f6586997.js.map",
     "static/js/2.7e5fa9dc.chunk.js": "/Turkish-Polish-Website/static/js/2.7e5fa9dc.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f6586997.js",
     "static/js/2.7e5fa9dc.chunk.js",
     "static/css/main.c3aea914.chunk.css",
-    "static/js/main.7c0f4ecb.chunk.js"
+    "static/js/main.64d9698f.chunk.js"
   ]
 }
