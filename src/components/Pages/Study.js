@@ -5,6 +5,7 @@ import StudyNounsPage from './StudyPages/StudyNounsPage'
 import StudyVerbsPage from './StudyPages/StudyVerbsPage'
 import StudyAdjectivesPage from './StudyPages/StudyAdjectivesPage'
 import Lessons from './StudyPages/Lessons'
+import Animals from './StudyPages/Nouns/Animals'
 
 const Study = () => {
     return ( 
@@ -26,20 +27,23 @@ const Study = () => {
         </ul>
     </div>
     <Switch>
-              <Route path="/study" exact>
+              <Route path="/study/" exact>
                 <StudyHomePage/>
               </Route>
-              <Route path="/study/nouns" exact>
+              <Route path="/study/nouns">
                 <StudyNounsPage/>
               </Route>
-              <Route path="/study/verbs" exact>
+              <Route path="/study/verbs">
                 <StudyVerbsPage/>
               </Route>
-              <Route path="/study/adjectives" exact>
+              <Route path="/study/adjectives">
                 <StudyAdjectivesPage/>
               </Route>
-              <Route path="/study/lessons" exact>
+              <Route path="/study/lessons">
                 <Lessons/>
+              </Route>
+              <Route path="/study/animals">
+                <Animals/>
               </Route>
     </Switch> 
     </>
