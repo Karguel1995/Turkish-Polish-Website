@@ -88,8 +88,19 @@ $Chalk-lettering-5-hex: #0D0D0D;
         // color: white;
         border-radius: 10px;
 
-        img.wordImage {
-            margin: 5px 5px 0;
+        .wordContainer {
+            margin: 5px;
+            width: 320px;
+            height: 200px;
+            line-height: 200px;
+            cursor: pointer;
+
+            p {
+                font-size: 28px;
+            }
+        }
+
+        .wordImage {
             width: 320px;
             height: 200px;
             border-radius: 5px;

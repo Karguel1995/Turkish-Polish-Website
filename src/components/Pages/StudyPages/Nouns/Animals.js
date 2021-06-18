@@ -21,16 +21,59 @@ import spider from '../../../../images/AnimalImages/spider.jpg'
 import ladybug from '../../../../images/AnimalImages/ladybug.jpg'
 import turkishFlag from '../../../../images/turkey.png'
 import polishFlag from '../../../../images/poland.png'
+import React, { useState } from 'react'
+
+function Animal ({animal}) {
+    const [appear, setAppear] = useState(animal.appear);
+    const changeToTurkish = () => {
+        setAppear('turkish')
+        }
+
+    const changeToPolish = () => {
+        setAppear('polish')
+        }
+
+    const changeToImage = () => {
+        setAppear('image')
+        }
+
+    return (
+        <div key={animal.id} className="wordElement">
+            <div className ="wordContainer">
+                {appear === 'image' ? (
+                    <img className="wordImage" src = {animal.url} alt ={animal.name}/>
+                ) : (<p onClick ={changeToImage}>{animal[appear]}</p>)
+            }
+            </div>
+            <div className="flagsContainer">
+                    <img className="flagPic" 
+                    src={turkishFlag} 
+                    alt="Turkish flag" 
+                    onClick={changeToTurkish}
+                    />
+
+                    <p>{animal.name}</p>
+
+                    <img className="flagPic" 
+                    src={polishFlag} 
+                    alt="Polish flag" 
+                    onClick={changeToPolish}
+                    />
+                </div>
+        </div>
+    )
+}
 
 const Animals = () => {
 
-    const animalList = [
+    let animalList = [
         {
         id: 1,
         name: 'cat',
         polish: 'kot',
         turkish: 'kedi',
         url: cat,
+        appear: 'image',
         },
         {
         id: 2,
@@ -38,6 +81,7 @@ const Animals = () => {
         polish: 'pies',
         turkish: 'köpek',
         url: dog,
+        appear: 'image',
         },
         {
         id: 3,
@@ -45,6 +89,7 @@ const Animals = () => {
         polish: 'ptak',
         turkish: 'kuş',
         url: bird,
+        appear: 'image',
         },
         {
         id: 4,
@@ -52,6 +97,7 @@ const Animals = () => {
         polish: 'kaczka',
         turkish: 'ördek',
         url: duck,
+        appear: 'image',
         },
         {
         id: 5,
@@ -59,6 +105,7 @@ const Animals = () => {
         polish: 'kura',
         turkish: 'tavuk',
         url: chicken,
+        appear: 'image',
         },
         {
         id: 6,
@@ -66,6 +113,7 @@ const Animals = () => {
         polish: 'ryba',
         turkish: 'balık',
         url: fish,
+        appear: 'image',
         },
         {
         id: 7,
@@ -73,6 +121,7 @@ const Animals = () => {
         polish: 'mysz',
         turkish: 'fare',
         url: mouse,
+        appear: 'image',
         },
         {
         id: 8,
@@ -80,6 +129,7 @@ const Animals = () => {
         polish: 'królik',
         turkish: 'tavşan',
         url: rabbit,
+        appear: 'image',
         },
         {
         id: 9,
@@ -87,6 +137,7 @@ const Animals = () => {
         polish: 'świnia',
         turkish: 'domuz',
         url: pig,
+        appear: 'image',
         },
         {
         id: 10,
@@ -94,6 +145,7 @@ const Animals = () => {
         polish: 'koń',
         turkish: 'at',
         url: horse,
+        appear: 'image',
         },
         {
         id: 11,
@@ -101,6 +153,7 @@ const Animals = () => {
         polish: 'krowa',
         turkish: 'İnek',
         url: cow,
+        appear: 'image',
         },
         {
         id: 12,
@@ -108,6 +161,7 @@ const Animals = () => {
         polish: 'owca',
         turkish: 'koyun',
         url: sheep,
+        appear: 'image',
         },
         {
         id: 13,
@@ -115,6 +169,7 @@ const Animals = () => {
         polish: 'niedźwiedź',
         turkish: 'ayı',
         url: bear,
+        appear: 'image',
         },
         {
         id: 14,
@@ -122,6 +177,7 @@ const Animals = () => {
         polish: 'lew',
         turkish: 'aslan',
         url: lion,
+        appear: 'image',
         },
         {
         id: 15,
@@ -129,6 +185,7 @@ const Animals = () => {
         polish: 'tygrys',
         turkish: 'kaplan',
         url: tiger,
+        appear: 'image',
         },
         {
         id: 16,
@@ -136,6 +193,7 @@ const Animals = () => {
         polish: 'słoń',
         turkish: 'fil',
         url: elephant,
+        appear: 'image',
         },
         {
         id: 17,
@@ -143,6 +201,7 @@ const Animals = () => {
         polish: 'żaba',
         turkish: 'kurbağa',
         url: frog,
+        appear: 'image',
         },
         {
         id: 18,
@@ -150,6 +209,7 @@ const Animals = () => {
         polish: 'krab',
         turkish: 'yengeç',
         url: crab,
+        appear: 'image',
         },
         {
         id: 19,
@@ -157,6 +217,7 @@ const Animals = () => {
         polish: 'żółw',
         turkish: 'kaplumbağa',
         url: turtle,
+        appear: 'image',
         },
         {
         id: 20,
@@ -164,6 +225,7 @@ const Animals = () => {
         polish: 'pająk',
         turkish: 'Örümcek',
         url: spider,
+        appear: 'image',
         },
         {
         id: 21,
@@ -171,20 +233,14 @@ const Animals = () => {
         polish: 'biedronka',
         turkish: 'uğur böceği',
         url: ladybug,
+        appear: 'image',
         },
     ]
 
     const animals = animalList.map(animal => (
-
-            <div className="wordElement">
-                <img className="wordImage" src = {animal.url} alt ={animal.name}/>
-                <div className="flagsContainer">
-                    <img className="flagPic" src={turkishFlag} alt="Turkish flag" />
-                    <p>{animal.name}</p>
-                    <img className="flagPic" src={polishFlag} alt="Polish flag" />
-                </div>
-            </div>
-    ))
+        <Animal key ={animal.id} animal = {animal} />
+        )
+    )
 
     return ( 
         <div className="page">
