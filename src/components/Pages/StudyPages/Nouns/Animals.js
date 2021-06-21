@@ -66,7 +66,7 @@ function Animal ({animal}) {
 
 const Animals = () => {
 
-    let animalList = [
+    const animalList = [
         {
         id: 1,
         name: 'cat',

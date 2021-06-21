@@ -1,13 +1,14 @@
-import food from '../../../images/FoodImages/food.jpg'
+import fruitsAndVegetables from '../../../images/FoodImages/fruitsAndVegetables.jpg'
 import animals from '../../../images/AnimalImages/animals.jpg'
+import drinks from '../../../images/DrinkImages/drinks.jpg'
 import {Link} from 'react-router-dom'
 
 const nounList = [
     {
         id: 1,
-        name: 'food',
-        path: 'food',
-        url: food,
+        name: 'Fruits and Vegetables',
+        path: 'fruitsAndVegetables',
+        url: fruitsAndVegetables,
     },
     {
         id: 2,
@@ -15,12 +16,18 @@ const nounList = [
         path: 'animals',
         url: animals,
     },
+    {
+        id: 3,
+        name: 'drinks',
+        path: 'drinks',
+        url: drinks,
+    },
 ]
 
 const nouns = nounList.map(noun => (
-    <div className="wordsSection">
+    <div key={noun.id} className="wordsSection">
         <Link to={`/study/${noun.path}`} className="pictureContainer">
-            <img src={noun.url} alt={noun.name} />
+            <img className="imgForSection"src={noun.url} alt={noun.name} />
             <div className="word">
                 <p>{noun.name}</p>
             </div>

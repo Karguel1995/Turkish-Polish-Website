@@ -45,7 +45,8 @@ $Chalk-lettering-5-hex: #0D0D0D;
     flex-wrap: wrap;
 
     .wordsSection {
-        color: black;
+        // color: black;
+        margin: 10px 0;
 
 
         .pictureContainer {
@@ -66,11 +67,11 @@ $Chalk-lettering-5-hex: #0D0D0D;
                 color: white;
             }
 
-            img {
+            .imgForSection {
                 width: 320px;
                 height: 200px;
                 transition: .4s;
-                cursor: pointer;
+                // cursor: pointer;
             }
 
             img:hover {
@@ -93,10 +94,11 @@ $Chalk-lettering-5-hex: #0D0D0D;
             width: 320px;
             height: 200px;
             line-height: 200px;
-            cursor: pointer;
 
             p {
                 font-size: 28px;
+                text-transform: capitalize;
+                cursor: pointer;
             }
         }
 
@@ -104,12 +106,12 @@ $Chalk-lettering-5-hex: #0D0D0D;
             width: 320px;
             height: 200px;
             border-radius: 5px;
+            overflow: hidden;
         }
 
         p {
             text-align: center;
             text-transform: uppercase;
-            // line-height: 40px;
         }
 
         .flagsContainer {
@@ -121,6 +123,72 @@ $Chalk-lettering-5-hex: #0D0D0D;
 
         .flagPic {
             cursor: pointer;
+        }
+    }
+}
+
+.containerForVerbs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .verbContainer {
+        width: 200px;
+        background-color: $Chalk-lettering-4-hex;
+        margin: 20px 40px;
+        border-radius: 10px;
+        text-align: center;
+
+        a.verbElement {
+            cursor: pointer;
+            line-height: 40px;
+            padding: 0 10px;
+            text-decoration: none;
+            color: white;
+            transition: .3s;
+        }
+
+        a:hover {
+            font-size: 18px;
+        }
+    }
+}
+
+table.greyGridTable {
+    margin: 0 auto;
+    border: 1px solid #FFFFFF;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+
+    td,
+    th {
+        border: 1px solid #FFFFFF;
+        padding: 3px 4px;
+    }
+
+    tbody td {
+        font-size: 13px;
+    }
+
+    tr:nth-child(even) {
+        background: #EBEBEB;
+    }
+
+    thead {
+        background: $Chalk-lettering-4-hex;
+        border-bottom: 4px solid #FFFFFF;
+
+        th {
+            font-size: 15px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: center;
+            border-left: 2px solid #FFFFFF;
+        }
+
+        th:first-child {
+            border-left: none;
         }
     }
 }
