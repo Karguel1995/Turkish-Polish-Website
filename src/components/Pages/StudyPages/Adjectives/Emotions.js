@@ -3,10 +3,17 @@ import '../../../Scss/Adjectives.scss'
 const adjectiveList = [
     {
         id: 1,
+        polish: 'smutny',
+        english: 'sad',
+        turkish: 'üzgün ',
+    },
+    {
+        id: 2,
         polish: 'szczęśliwy',
         english: 'happy',
         turkish: 'mutlu',
     },
+
 ]
 
 const adjectives = adjectiveList.map(verb => (

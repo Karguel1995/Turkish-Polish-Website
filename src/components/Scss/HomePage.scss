@@ -9,6 +9,8 @@ $Chalk-lettering-5-hex: #0D0D0D;
 .homePage,
 .page {
     padding-bottom: 50px;
+    animation: appear .5s;
+    margin-top: 50px;
 
     h1 {
         font-size: 36px;
@@ -40,6 +42,16 @@ $Chalk-lettering-5-hex: #0D0D0D;
             // text-decoration: underline;
             color: $Chalk-lettering-2-hex;
         }
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
 

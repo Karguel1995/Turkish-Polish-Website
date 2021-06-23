@@ -26,7 +26,7 @@ const adjectiveList = [
         url: appearance,
     },
     {
-        id: 3,
+        id: 4,
         name: 'colors',
         path: 'colors',
         url: colors,

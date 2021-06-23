@@ -1,6 +1,16 @@
 import water from '../../../../images/DrinkImages/water.jpg'
+import sparklingWater from '../../../../images/DrinkImages/sparklingWater.jpg'
 import tea from '../../../../images/DrinkImages/tea.jpg'
 import coffee from '../../../../images/DrinkImages/coffee.jpg'
+import milk from '../../../../images/DrinkImages/milk.jpg'
+import juice from '../../../../images/DrinkImages/juice.jpg'
+import honey from '../../../../images/DrinkImages/honey.jpg'
+import hotChocolate from '../../../../images/DrinkImages/hotChocolate.jpg'
+import lemonade from '../../../../images/DrinkImages/lemonade.jpg'
+import beer from '../../../../images/DrinkImages/beer.jpg'
+import wine from '../../../../images/DrinkImages/wine.jpg'
+import vodka from '../../../../images/DrinkImages/vodka.jpg'
+import champagne from '../../../../images/DrinkImages/champagne.jpg'
 
 
 
@@ -53,28 +63,108 @@ const Drinks = () => {
 
     const drinkList = [
         {
-            id: 1,
-            name: 'water',
-            polish: 'woda',
-            turkish: 'su',
-            url: water,
-            appear: 'image',
+                id: 1,
+                name: 'water',
+                polish: 'woda',
+                turkish: 'su',
+                url: water,
+                appear: 'image',
             },
             {
-            id: 2,
-            name: 'tea',
-            polish: 'herbata',
-            turkish: 'çay',
-            url: tea,
-            appear: 'image',
+                id: 2,
+                name: 'tea',
+                polish: 'herbata',
+                turkish: 'çay',
+                url: tea,
+                appear: 'image',
             },
             {
-            id: 3,
-            name: 'coffee',
-            polish: 'kawa',
-            turkish: 'kahve',
-            url: coffee,
-            appear: 'image',
+                id: 3,
+                name: 'coffee',
+                polish: 'kawa',
+                turkish: 'kahve',
+                url: coffee,
+                appear: 'image',
+            },
+            {
+                id: 4,
+                name: 'milk',
+                polish: 'mleko',
+                turkish: 'süt',
+                url: milk,
+                appear: 'image',
+            },
+            {
+                id: 5,
+                name: 'juice',
+                polish: 'sok',
+                turkish: 'meyve suyu',
+                url: juice,
+                appear: 'image',
+            },
+            {
+                id: 6,
+                name: 'honey',
+                polish: 'miód',
+                turkish: 'bal',
+                url: honey,
+                appear: 'image',
+            },
+            {
+                id: 7,
+                name: 'sparkling water',
+                polish: 'woda gazowana',
+                turkish: 'maden suyu',
+                url: sparklingWater,
+                appear: 'image',
+            },
+            {
+                id: 8,
+                name: 'hot chocolate',
+                polish: 'gorąca czekolada',
+                turkish: 'sıcak çikolata',
+                url: hotChocolate,
+                appear: 'image',
+            },
+            {
+                id: 9,
+                name: 'lemonade',
+                polish: 'lemoniada',
+                turkish: 'limonata',
+                url: lemonade,
+                appear: 'image',
+            },
+            {
+                id: 10,
+                name: 'beer',
+                polish: 'piwo',
+                turkish: 'bira',
+                url: beer,
+                appear: 'image',
+            },
+            {
+                id: 11,
+                name: 'wine',
+                polish: 'wino',
+                turkish: 'şarap',
+                url: wine,
+                appear: 'image',
+            },
+            {
+                id: 12,
+                name: 'vodka',
+                polish: 'wódka',
+                turkish: 'votka',
+                url: vodka,
+                appear: 'image',
+            },
+            {
+                id: 13,
+                name: 'champagne',
+                polish: 'szampan',
+                turkish: 'şampanya',
+                url: champagne,
+                appear: 'image',
             },
     ]
 

@@ -89,37 +89,43 @@ const adjectiveList = [
         id: 15,
         polish: 'mądry',
         english: 'smart',
-        turkish: 'akıllı',
+        turkish: 'zeki',
     },
     {
         id: 16,
+        polish: 'głupi',
+        english: 'stupid ',
+        turkish: 'aptal '
+    },
+    {
+        id: 17,
         polish: 'okrutny',
         english: 'cruel',
         turkish: 'zalim',
     },
     {
-        id: 17,
+        id: 18,
         polish: 'nerwowy',
         english: 'nervous',
         turkish: 'sinirli',
     },
     {
-        id: 18,
+        id: 19,
         polish: 'szczery',
         english: 'honest',
         turkish: 'dürüst',
     },
     {
-        id: 19,
+        id: 20,
         polish: 'pewny siebie',
         english: 'confident',
         turkish: 'kendine güvenen',
     },
     {
-        id: 20,
-        polish: 'szczery',
-        english: 'honest',
-        turkish: 'dürüst',
+        id: 29,
+        polish: 'poważny',
+        english: 'serious',
+        turkish: 'ciddi',
     },
 ]
 

@@ -1,6 +1,7 @@
-import fruitsAndVegetables from '../../../images/FoodImages/fruitsAndVegetables.jpg'
+import fruitsAndVegetables from '../../../images/FruitsAndVegetables/fruitsAndVegetables.jpg'
 import animals from '../../../images/AnimalImages/animals.jpg'
 import drinks from '../../../images/DrinkImages/drinks.jpg'
+import basicFood from '../../../images/BasicFoodImages/basicFood.jpg'
 import {Link} from 'react-router-dom'
 
 const nounList = [
@@ -12,15 +13,22 @@ const nounList = [
     },
     {
         id: 2,
-        name: 'animals',
-        path: 'animals',
-        url: animals,
+        name: 'Basic food',
+        path: 'basicFood',
+        url: basicFood,
     },
     {
         id: 3,
         name: 'drinks',
         path: 'drinks',
         url: drinks,
+    },
+
+    {
+        id: 7,
+        name: 'animals',
+        path: 'animals',
+        url: animals,
     },
 ]
 
