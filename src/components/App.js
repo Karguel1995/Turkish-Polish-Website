@@ -5,6 +5,7 @@ import {
   BrowserRouter as Router,
 } from "react-router-dom";
 import Navigation from './Navigation'
+import MobileNavigation from './MobileNavigation'
 import './Scss/App.scss';
 import './Scss/Main.scss'
 import Home from './Pages/Home';
@@ -17,11 +18,12 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div className="app">
         <Navigation />
+        <MobileNavigation />
         <main className="main">
           <div className="main-page">
             <Switch>
               <Route path="/" exact>
-                <Home/>
+                <Home/> 
               </Route>
               <Route path="/about">
                 <About/>

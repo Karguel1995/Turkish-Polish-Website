@@ -38,3 +38,47 @@ header {
     background-image: url(../../images/alb.jpg);
     background-position: 0 -100px;
 }
+
+@media (max-width: 1090px) {
+    header {
+        height: 240px;
+
+
+        .headerBorder {
+            height: 220px;
+            width: calc(100% - 20px);
+        }
+    }
+
+    .alb {
+        background-position: 0 -60px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 160px;
+        border-top-right-radius: 0;
+
+        .headerBorder {
+            height: 140px;
+            width: calc(100% - 20px);
+            border-top-right-radius: 0;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    header {
+        height: 180px;
+        background-position: 0 0px;
+
+        .headerBorder {
+            height: 160px;
+        }
+    }
+
+    .alb {
+        background-position: 0 0px;
+    }
+}

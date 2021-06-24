@@ -45,15 +45,6 @@ $Chalk-lettering-5-hex: #0D0D0D;
     }
 }
 
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
 
 .homePage {
     .quote {
@@ -69,6 +60,140 @@ $Chalk-lettering-5-hex: #0D0D0D;
 
         p {
             text-align: right;
+        }
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 1090px) {
+
+    .homePage,
+    .page {
+        margin-top: 30px;
+
+        h2.heading {
+            font-size: 28px;
+            margin: 30px 20px 10px;
+        }
+
+        h3 {
+            margin: 20px 15px 10px
+        }
+
+        p.text {
+            font-size: 20px;
+        }
+    }
+
+    .homePage {
+        .quote {
+            padding-bottom: 30px;
+
+            h2.quote-heading {
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .homePage,
+    .page {
+        margin-top: 30px;
+
+        h1 {
+            font-size: 32px;
+            margin: 20px 0;
+        }
+
+        h2.heading {
+            font-size: 26px;
+            margin: 20px 20px 10px;
+        }
+
+        h3 {
+            margin: 20px 15px 10px
+        }
+
+        p.text {
+            font-size: 18px;
+        }
+    }
+
+    .homePage {
+        .quote {
+            padding-bottom: 20px;
+            margin: 20px 80px 20px;
+
+            h2.quote-heading {
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+
+    .homePage,
+    .page {
+        h1 {
+            font-size: 28px;
+        }
+
+        h2.heading {
+            font-size: 22px;
+        }
+
+        p.text {
+            font-size: 16px;
+        }
+    }
+
+    .homePage {
+        .quote {
+            margin: 20px 100px 20px;
+
+            h2.quote-heading {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+
+    .homePage,
+    .page {
+        h1 {
+            font-size: 22px;
+        }
+
+        h2.heading {
+            font-size: 18px;
+        }
+
+        p.text {
+            font-size: 14px;
+        }
+    }
+
+    .homePage {
+        .quote {
+            margin: 15px 30px;
+
+            h2.quote-heading {
+                font-size: 18px;
+            }
         }
     }
 }

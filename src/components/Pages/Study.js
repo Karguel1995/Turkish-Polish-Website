@@ -1,5 +1,6 @@
 import '../Scss/Study.scss'
 import { NavLink, Switch, Route } from 'react-router-dom';
+import { useState } from 'react';
 import StudyHomePage from './StudyPages/StudyHomePage'
 import StudyNounsPage from './StudyPages/StudyNounsPage'
 import StudyVerbsPage from './StudyPages/StudyVerbsPage'
@@ -24,6 +25,7 @@ import Emotions from './StudyPages/Adjectives/Emotions'
 import Appearance from './StudyPages/Adjectives/Appearance';
 
 // import PolishLessons from './StudyPages/PolishLessons';
+
 
 
 function Paths() {
@@ -75,21 +77,27 @@ function Paths() {
 }
 
 const Study = () => {
+  const [activeStudyClass, setActiveStudyClass] = useState(false)
+  const handleStudyBarClick = () => {
+      setActiveStudyClass(!activeStudyClass);
+    }
+
     return ( 
         <>
-    <div className="studyNavigation">
+        <i className="fas fa-arrow-circle-down" onClick={handleStudyBarClick}></i>
+    <div className={`studyNavigation ${activeStudyClass ? 'studyNavActive' : ''}`}>
         <ul>
             <li>
-                <NavLink to="/study/nouns">nouns</NavLink>
+                <NavLink to="/study/nouns" onClick={handleStudyBarClick}>nouns</NavLink>
             </li>
             <li>
-                <NavLink to="/study/verbs">verbs</NavLink>
+                <NavLink to="/study/verbs" onClick={handleStudyBarClick}>verbs</NavLink>
             </li>
             <li>
-                <NavLink to="/study/adjectives">adjectives</NavLink>
+                <NavLink to="/study/adjectives" onClick={handleStudyBarClick}>adjectives</NavLink>
             </li>
             <li>
-                <NavLink to="/study/lessons">lessons</NavLink>
+                <NavLink to="/study/lessons" onClick={handleStudyBarClick}>lessons</NavLink>
             </li>
         </ul>
     </div>

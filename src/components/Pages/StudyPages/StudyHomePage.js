@@ -1,7 +1,7 @@
 const StudyHomePage = () => {
     return ( 
         <div className="page">
-            <h1>Let's learn Polish And Turkish with us!</h1>
+            <h1 style={{marginTop: 40}}>Let's learn Polish And Turkish with us!</h1>
         </div>
      );
 }
