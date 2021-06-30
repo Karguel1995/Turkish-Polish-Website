@@ -20,7 +20,7 @@ const Home = () => {
                They are Filip and Ceren! A couple from Turkey and Poland, who enjoy traveling and spending time experiencing many fantastic adventures! If you are interested in their story, visit <Link to="/about">About Us</Link>.
             </p>
             <p className="text">
-                They are also trying to teach two of the most difficult languages - Polish and Turkish. If you are interested, please visit <Link to="/study">Learn language</Link>, there are a lot of fun exercises and pictures to make studing so easy!
+                They are also trying to teach two of the most difficult languages - Polish and Turkish. If you are interested, please visit <Link to="/study">Learn language</Link>, there are a lot of fun exercises and pictures to make studying so easy!
             </p>
         </div>
         </>

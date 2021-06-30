@@ -199,7 +199,7 @@ const BasicFood = () => {
                 id: 16,
                 name: 'nuts',
                 polish: 'orzechy',
-                turkish: 'fındık',
+                turkish: 'kuruyemiş',
                 url: nuts,
                 appear: 'image',
         },

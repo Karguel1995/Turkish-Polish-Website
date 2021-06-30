@@ -2,6 +2,7 @@ import fruitsAndVegetables from '../../../images/FruitsAndVegetables/fruitsAndVe
 import animals from '../../../images/AnimalImages/animals.jpg'
 import drinks from '../../../images/DrinkImages/drinks.jpg'
 import basicFood from '../../../images/BasicFoodImages/basicFood.jpg'
+import spicesHerbs from '../../../images/BasicFoodImages/spices.jpg'
 import {Link} from 'react-router-dom'
 
 const nounList = [
@@ -19,6 +20,12 @@ const nounList = [
     },
     {
         id: 3,
+        name: 'Spices & Herbs',
+        path: 'spicesHerbs',
+        url: spicesHerbs,
+    },
+    {
+        id: 4,
         name: 'drinks',
         path: 'drinks',
         url: drinks,

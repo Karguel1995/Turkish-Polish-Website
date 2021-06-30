@@ -11,6 +11,7 @@ import Animals from './StudyPages/Nouns/Animals'
 import FruitsAndVegetables from './StudyPages/Nouns/FruitsAndVegetables'
 import Drinks from './StudyPages/Nouns/Drinks'
 import BasicFood from './StudyPages/Nouns/BasicFood'
+import SpicesHerbs from './StudyPages/Nouns/SpicesHerbs'
 
 
 import ToBe from './StudyPages/Verbs/ToBe'
@@ -42,6 +43,9 @@ function Paths() {
     </Route>
     <Route path="/study/basicFood">
       <BasicFood/>
+    </Route>
+    <Route path="/study/spicesHerbs">
+      <SpicesHerbs/>
     </Route>
 
     <Route path="/study/tobe">
