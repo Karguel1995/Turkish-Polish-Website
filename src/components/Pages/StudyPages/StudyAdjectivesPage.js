@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 const adjectiveList = [
     {
         id: 1,
-        name: 'character',
+        name: 'personality',
         path: 'character',
         url: character,
     },

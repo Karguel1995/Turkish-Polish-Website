@@ -59,7 +59,7 @@ const adjectiveList = [
         id: 10,
         polish: 'wredny',
         english: 'mean',
-        turkish: 'anlamına gelmek',
+        turkish: 'aşağılık/adi',
     },
     {
         id: 11,
@@ -107,7 +107,7 @@ const adjectiveList = [
         id: 18,
         polish: 'nerwowy',
         english: 'nervous',
-        turkish: 'sinirli',
+        turkish: 'endişeli',
     },
     {
         id: 19,
@@ -126,6 +126,102 @@ const adjectiveList = [
         polish: 'poważny',
         english: 'serious',
         turkish: 'ciddi',
+    },
+    {
+        id: 30,
+        polish: 'niezawodny',
+        english: 'reliable',
+        turkish: 'güvenilir',
+    },
+    {
+        id: 31,
+        polish: 'rozmowny',
+        english: 'talkative',
+        turkish: 'konuşkan '
+    },
+    {
+        id: 32,
+        polish: 'przyjazny',
+        english: 'friendly ',
+        turkish: 'arkadaş canlısı ',
+    },
+    {
+        id: 33,
+        polish: 'skromny',
+        english: 'modest ',
+        turkish: 'mütevazi '
+    },
+    {
+        id: 34,
+        polish: 'wrażliwy',
+        english: 'sensitive',
+        turkish: 'duygusal',
+    },
+    {
+        id: 35,
+        polish: 'wyluzowany',
+        english: 'easygoing',
+        turkish: 'geçinmesi kolay',
+    },
+    {
+        id: 36,
+        polish: 'delikatny',
+        english: 'gentle',
+        turkish: 'nazik'
+    },
+    {
+        id: 37,
+        polish: 'towarzyski',
+        english: 'outgoing',
+        turkish: 'girişken',
+    },
+    {
+        id: 38,
+        polish: 'zdyscyplinowany',
+        english: 'disciplined',
+        turkish: 'disiplinli'
+    },
+    {
+        id: 39,
+        polish: 'nieśmiały',
+        english: 'shy',
+        turkish: 'utangaç',
+    },
+    {
+        id: 40,
+        polish: 'wierny',
+        english: 'Faithful ',
+        turkish: 'Sadık '
+    },
+    {
+        id: 41,
+        polish: 'samolubny',
+        english: 'selfish',
+        turkish: 'bencil',
+    },
+    {
+        id: 42,
+        polish: 'uparty',
+        english: 'Stubborn',
+        turkish: 'İnatçı'
+    },
+    {
+        id: 43,
+        polish: 'zapominalski',
+        english: 'forgetful ',
+        turkish: 'unutkan ',
+    },
+    {
+        id: 44,
+        polish: 'zazdrosny',
+        english: 'jealous',
+        turkish: 'kıskanç',
+    },
+    {
+        id: 45,
+        polish: 'natrętny',
+        english: 'obsessive',
+        turkish: 'takıntılı ',
     },
 ]
 
