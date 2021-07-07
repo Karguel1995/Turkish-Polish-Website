@@ -3,7 +3,13 @@ import animals from '../../../images/AnimalImages/animals.jpg'
 import drinks from '../../../images/DrinkImages/drinks.jpg'
 import basicFood from '../../../images/BasicFoodImages/basicFood.jpg'
 import spicesHerbs from '../../../images/BasicFoodImages/spices.jpg'
-import {Link} from 'react-router-dom'
+import { Link, Switch, Route } from "react-router-dom";
+
+import Animals from './Nouns/Animals'
+import FruitsAndVegetables from './Nouns/FruitsAndVegetables'
+import Drinks from './Nouns/Drinks'
+import BasicFood from './Nouns/BasicFood'
+import SpicesHerbs from './Nouns/SpicesHerbs'
 
 const nounList = [
     {
@@ -39,9 +45,22 @@ const nounList = [
     },
 ]
 
+const NounsHeader = function () {
+    return (
+    <>
+        <h1>
+            Nouns
+        </h1>
+        <div className="wordsContainer">
+            {nouns}
+        </div>
+    </>
+    )
+}
+
 const nouns = nounList.map(noun => (
     <div key={noun.id} className="wordsSection">
-        <Link to={`/study/${noun.path}`} className="pictureContainer">
+        <Link to={`/study/nouns/${noun.path}`} className="pictureContainer">
             <img className="imgForSection"src={noun.url} alt={noun.name} />
             <div className="word">
                 <p>{noun.name}</p>
@@ -53,12 +72,27 @@ const nouns = nounList.map(noun => (
 const StudyNounsPage = () => {
     return ( 
         <div className="page">
-            <h1>
-                Nouns
-            </h1>
-            <div className="wordsContainer">
-                {nouns}
-            </div>
+            <Switch>
+                <Route path="/study/nouns" exact>
+                    <NounsHeader />
+                </Route>
+                <Route path="/study/nouns/animals">
+                    <Animals/>
+                </Route>
+                <Route path="/study/nouns/fruitsAndVegetables">
+                    <FruitsAndVegetables/>
+                </Route>
+                <Route path="/study/nouns/drinks">
+                    <Drinks/>
+                </Route>
+                <Route path="/study/nouns/basicFood">
+                    <BasicFood/>
+                </Route>
+                <Route path="/study/nouns/spicesHerbs">
+                    <SpicesHerbs/>
+                </Route>
+                
+            </Switch>
     </div>
      );
 }

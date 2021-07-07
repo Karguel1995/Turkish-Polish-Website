@@ -1,4 +1,12 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, Switch, Route } from "react-router-dom";
+
+import ToBe from './Verbs/ToBe'
+import ToHave from './Verbs/ToHave'
+import ToEat from './Verbs/ToEat'
+import ToDrink from './Verbs/ToDrink';
+import ToDo from './Verbs/ToDo';
+import ToRead from './Verbs/ToRead';
 
 const verbList = [
     {
@@ -45,12 +53,23 @@ const verbList = [
     },
 ]
 
-
+const VerbsHeader = function () {
+    return (
+    <>
+        <h1>
+        Verbs
+        </h1>
+        <div className="containerForVerbs">
+            {verbs}
+        </div>
+    </>
+    )
+}
 
 const verbs = verbList.map(verb => (
     <div className="verbContainer">
         <Link 
-        to={`/study/${verb.url}`} 
+        to={`/study/verbs/${verb.url}`} 
         className="verbElement">
             {verb.english} - {verb.polish}
         </Link>
@@ -60,12 +79,29 @@ const verbs = verbList.map(verb => (
 const StudyVerbsPage = () => {
     return ( 
         <div className="page">
-            <h1>
-                Verbs
-            </h1>
-            <div className="containerForVerbs">
-                {verbs}  
-            </div>
+            <Switch>
+                <Route path="/study/verbs" exact>
+                    <VerbsHeader />
+                </Route>
+                <Route path="/study/verbs/tobe">
+                    <ToBe />
+                </Route>
+                <Route path="/study/verbs/have">
+                    <ToHave />
+                </Route>
+                <Route path="/study/verbs/eat">
+                    <ToEat />
+                </Route>
+                <Route path="/study/verbs/drink">
+                    <ToDrink />
+                </Route>
+                <Route path="/study/verbs/do">
+                    <ToDo />
+                </Route>
+                <Route path="/study/verbs/read">
+                    <ToRead />
+                </Route>
+            </Switch>
         </div>
      );
 }

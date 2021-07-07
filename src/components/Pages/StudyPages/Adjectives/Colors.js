@@ -17,7 +17,7 @@ const OtherAdjectives = () => {
     
     return ( 
         <div className="page">
-            <h1>Other Adjectives</h1>
+            <h1>Colors</h1>
             <div className="containerForAdjectives">
             <div className="adjectiveMainContainer">
                 <p className="adjectiveElement">Polish</p>
