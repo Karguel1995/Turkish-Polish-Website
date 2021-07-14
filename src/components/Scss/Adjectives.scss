@@ -21,7 +21,6 @@ $Chalk-lettering-5-hex: #0D0D0D;
         p {
             font-size: 18px;
             line-height: 30px;
-            // padding: 0 10px;
             padding: 10px;
             width: 200px;
             color: white;
@@ -32,7 +31,6 @@ $Chalk-lettering-5-hex: #0D0D0D;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        // border-bottom: 1px solid $Chalk-lettering-4-hex;
         margin: 0 50px;
 
         .adjectiveElement {
@@ -40,10 +38,6 @@ $Chalk-lettering-5-hex: #0D0D0D;
             padding: 10px;
             line-height: 20px;
             transition: .3s;
-        }
-
-        :hover {
-            font-size: 18px;
         }
     }
 
