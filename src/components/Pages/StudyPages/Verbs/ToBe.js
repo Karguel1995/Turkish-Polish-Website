@@ -1,50 +1,68 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+
+import '../../../Scss/Verbs.scss'
+import {VerbsContext} from '../store/VerbsStore'
+import VerbsContainer from './VerbsContainer'
+
+
+
+const verbList = [
+    {
+        pronoun: 'Ja',
+        present: 'jestem',
+        future: 'będę',
+        pastMale: 'byłem',
+        pastFemale: 'byłam',
+    },
+    {
+        pronoun: 'Ty',
+        present: 'jesteś',
+        future: 'będziesz',
+        pastMale: 'byłeś',
+        pastFemale: 'byłaś',
+    },
+    {
+        pronoun: 'On / Ona',
+        present: 'jest',
+        future: 'będzie',
+        pastMale: 'był',
+        pastFemale: 'była',
+    },
+    {
+        pronoun: 'My',
+        present: 'jesteśmy',
+        future: 'będziemy',
+        pastMale: 'byliśmy',
+        pastFemale: 'byłyśmy',
+    },
+    {
+        pronoun: 'Wy',
+        present: 'jesteście',
+        future: 'będziecie',
+        pastMale: 'byliście',
+        pastFemale: 'byłyście',
+    },
+    {
+        pronoun: 'Oni / One',
+        present: 'są',
+        future: 'będą',
+        pastMale: 'byli',
+        pastFemale: 'były',
+    },
+]
 
 const ToBe = () => {
+
+    const {selectedVerbList, setSelectedVerbList} = useContext(VerbsContext)
+
+    useEffect(() => {
+    setSelectedVerbList(verbList)
+}, )
+
     return ( 
         <div className="page">
-            <h1>To Be - Być</h1>
-<table class="greyGridTable">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Present tense</th>
-            <th>Future tense</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Ja</td>
-            <td>jestem</td>
-            <td>będę</td>
-        </tr>
-        <tr>
-            <td>Ty</td>
-            <td>jesteś</td>
-            <td>będziesz</td>
-        </tr>
-        <tr>
-            <td>On/Ona/Ono</td>
-            <td>jest</td>
-            <td>będzie</td>
-        </tr>
-        <tr>
-            <td>My</td>
-            <td>jesteśmy</td>
-            <td>będziemy</td>
-        </tr>
-        <tr>
-            <td>Wy</td>
-            <td>jesteście</td>
-            <td>będziecie</td>
-        </tr>
-        <tr>
-            <td>Oni/One</td>
-            <td>są</td>
-            <td>będą</td>
-        </tr>
-    </tbody>
-</table>
+            <h1>To be - Być</h1>
+            <VerbsContainer verbList={selectedVerbList} />
 
 <h2 className="heading">Examples:</h2>
 <h3>Present tense</h3>

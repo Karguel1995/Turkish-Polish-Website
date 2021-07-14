@@ -1,51 +1,70 @@
-const ToRead = () => {
+import React, { useContext, useEffect } from 'react'
+
+import '../../../Scss/Verbs.scss'
+import {VerbsContext} from '../store/VerbsStore'
+import VerbsContainer from './VerbsContainer'
+
+
+
+const verbList = [
+    {
+        pronoun: 'Ja',
+        present: 'czytam',
+        future: 'będę czytać',
+        pastMale: 'czytałem',
+        pastFemale: 'czytałam',
+    },
+    {
+        pronoun: 'Ty',
+        present: 'czytasz',
+        future: 'będziesz czytać',
+        pastMale: 'czytełeś',
+        pastFemale: 'czytałaś',
+    },
+    {
+        pronoun: 'On / Ona',
+        present: 'czyta',
+        future: 'będzie czytać',
+        pastMale: 'czytał',
+        pastFemale: 'czytała',
+    },
+    {
+        pronoun: 'My',
+        present: 'czytamy',
+        future: 'będziemy czytać',
+        pastMale: 'czytaliśmy',
+        pastFemale: 'czytałyśmy',
+    },
+    {
+        pronoun: 'Wy',
+        present: 'czytacie',
+        future: 'będziecie czytać',
+        pastMale: 'czytaliście',
+        pastFemale: 'czytałyście',
+    },
+    {
+        pronoun: 'Oni / One',
+        present: 'czytają',
+        future: 'będą czytać',
+        pastMale: 'czytali',
+        pastFemale: 'czytały',
+    },
+]
+
+
+const ToDo = () => {
+    
+    const {selectedVerbList, setSelectedVerbList} = useContext(VerbsContext)
+    useEffect(() => {
+        setSelectedVerbList(verbList)
+    }, )
     return ( 
         <div className="page">
-            <h1>To Read - Czytać</h1>
-<table class="greyGridTable">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Present tense</th>
-            <th>Future tense</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Ja</td>
-            <td>czytam</td>
-            <td>będę czytać</td>
-        </tr>
-        <tr>
-            <td>Ty</td>
-            <td>czytasz</td>
-            <td>będziesz czytać</td>
-        </tr>
-        <tr>
-            <td>On/Ona/Ono</td>
-            <td>czyta</td>
-            <td>będzie czytać</td>
-        </tr>
-        <tr>
-            <td>My</td>
-            <td>czytamy</td>
-            <td>będziemy czytać</td>
-        </tr>
-        <tr>
-            <td>Wy</td>
-            <td>czytacie</td>
-            <td>będziecie czytać</td>
-        </tr>
-        <tr>
-            <td>Oni/One</td>
-            <td>czytają</td>
-            <td>będą czytać</td>
-        </tr>
-    </tbody>
-</table>
+            <h1>To read - czytać</h1>
+            <VerbsContainer verbList={selectedVerbList} />
 </div>
 );
 }
  
-export default ToRead;
+export default ToDo;
 

@@ -1,0 +1,63 @@
+/* Color Theme Swatches in Hex */
+$Chalk-lettering-1-hex: #BF907E;
+$Chalk-lettering-2-hex: #A63117;
+$Chalk-lettering-3-hex: #F2F2F2;
+$Chalk-lettering-4-hex: #595959;
+$Chalk-lettering-5-hex: #0D0D0D;
+
+.containerForSingleVerb {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .verbMainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid $Chalk-lettering-4-hex;
+    margin: 0 50px;
+    background-color: $Chalk-lettering-4-hex;
+
+    .verbPolishPastTense {
+      display: flex;
+      flex-direction: column;
+
+      .verbPolishPastTenseGender {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      padding: 0 10px;
+      width: 200px;
+      color: white;
+    }
+  }
+
+  .verbContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+
+    .verbElement {
+      width: 200px;
+      padding: 10px;
+      line-height: 20px;
+      transition: .3s;
+    }
+  }
+
+  .verbContainer:nth-child(odd) {
+    background-color: #EBEBEB;
+  }
+}

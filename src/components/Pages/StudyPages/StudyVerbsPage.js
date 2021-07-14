@@ -7,6 +7,7 @@ import ToEat from './Verbs/ToEat'
 import ToDrink from './Verbs/ToDrink';
 import ToDo from './Verbs/ToDo';
 import ToRead from './Verbs/ToRead';
+import VerbsStore from "./store/VerbsStore";
 
 const verbList = [
     {
@@ -78,6 +79,7 @@ const verbs = verbList.map(verb => (
 
 const StudyVerbsPage = () => {
     return ( 
+        <VerbsStore >
         <div className="page">
             <Switch>
                 <Route path="/study/verbs" exact>
@@ -103,6 +105,7 @@ const StudyVerbsPage = () => {
                 </Route>
             </Switch>
         </div>
+        </VerbsStore>
      );
 }
  

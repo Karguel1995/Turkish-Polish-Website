@@ -1,51 +1,70 @@
-const ToEat = () => {
+import React, { useContext, useEffect } from 'react'
+
+import '../../../Scss/Verbs.scss'
+import {VerbsContext} from '../store/VerbsStore'
+import VerbsContainer from './VerbsContainer'
+
+
+
+const verbList = [
+    {
+        pronoun: 'Ja',
+        present: 'jem',
+        future: 'będę jeść',
+        pastMale: 'jadłem',
+        pastFemale: 'jadłam',
+    },
+    {
+        pronoun: 'Ty',
+        present: 'jesz',
+        future: 'będziesz jeść',
+        pastMale: 'jadłeś',
+        pastFemale: 'jadłaś',
+    },
+    {
+        pronoun: 'On / Ona',
+        present: 'je',
+        future: 'będzie jeść',
+        pastMale: 'jadł',
+        pastFemale: 'jadła',
+    },
+    {
+        pronoun: 'My',
+        present: 'jemy',
+        future: 'będziemy jeść',
+        pastMale: 'jedliśmy',
+        pastFemale: 'jadłyśmy',
+    },
+    {
+        pronoun: 'Wy',
+        present: 'jecie',
+        future: 'będziecie jeśćć',
+        pastMale: 'jedliście',
+        pastFemale: 'jadłyście',
+    },
+    {
+        pronoun: 'Oni / One',
+        present: 'jedzą',
+        future: 'będą jeść',
+        pastMale: 'jedli',
+        pastFemale: 'jadły',
+    },
+]
+
+
+const ToDo = () => {
+    
+    const {selectedVerbList, setSelectedVerbList} = useContext(VerbsContext)
+    useEffect(() => {
+        setSelectedVerbList(verbList)
+    }, )
     return ( 
         <div className="page">
-            <h1>To Eat - Pić</h1>
-<table class="greyGridTable">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Present tense</th>
-            <th>Future tense</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Ja</td>
-            <td>jem</td>
-            <td>będę jeść</td>
-        </tr>
-        <tr>
-            <td>Ty</td>
-            <td>jesz</td>
-            <td>będziesz jeść</td>
-        </tr>
-        <tr>
-            <td>On/Ona/Ono</td>
-            <td>je</td>
-            <td>będzie jeść</td>
-        </tr>
-        <tr>
-            <td>My</td>
-            <td>jemy</td>
-            <td>będziemy jeść</td>
-        </tr>
-        <tr>
-            <td>Wy</td>
-            <td>jecie</td>
-            <td>będziecie jeść</td>
-        </tr>
-        <tr>
-            <td>Oni/One</td>
-            <td>jedzą</td>
-            <td>będą jeść</td>
-        </tr>
-    </tbody>
-</table>
+            <h1>To eat - Jeść</h1>
+            <VerbsContainer verbList={selectedVerbList} />
 </div>
 );
 }
  
-export default ToEat;
+export default ToDo;
 
