@@ -25,18 +25,8 @@ main.main {
 
 @media (max-width: 640px) {
     main.main {
-        overflow: auto;
-        display: flex;
         flex-grow: 1;
-        background-color: #fff;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-        width: 100%;
-
-        .main-page {
-            width: 100%;
-
-        }
     }
 }

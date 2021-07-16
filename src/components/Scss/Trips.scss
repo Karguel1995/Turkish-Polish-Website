@@ -10,20 +10,65 @@ $Chalk-lettering-5-hex: #0D0D0D;
   .containerForPhotoFromTrip {
     margin: 30px auto;
     padding: 5px;
-    width: 650px;
-    height: 440px;
+    width: 970px;
     border-radius: 10px;
     background-color: $Chalk-lettering-3-hex;
 
     img.photoFromTrip {
-      width: 640px;
+      width: 960px;
       border-radius: 10px;
     }
 
     p {
+      line-height: 28px;
       font-size: 22px;
       text-transform: capitalize;
       text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 1360px) {
+  .tripArticle {
+    .containerForPhotoFromTrip {
+      width: 650px;
+
+      img.photoFromTrip {
+        width: 640px;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .tripArticle {
+    .containerForPhotoFromTrip {
+      width: 490px;
+
+      img.photoFromTrip {
+        width: 480px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .tripArticle {
+    .containerForPhotoFromTrip {
+      width: 330px;
+
+      img.photoFromTrip {
+        width: 320px;
+      }
+
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
