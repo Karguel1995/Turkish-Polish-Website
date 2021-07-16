@@ -1,0 +1,93 @@
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .single-element {
+    margin: 15px 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+
+
+    .element-title {
+      position: absolute;
+      width: 100%;
+      font-size: 22px;
+      bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    .trip-image {
+      width: 480px;
+      height: 300px;
+      transition: .4s;
+    }
+
+    .study-element-image {
+      width: 320px;
+      height: 200px;
+      transition: .4s;
+    }
+
+    img:hover {
+      transform: scale(110%);
+      filter: brightness(60%);
+    }
+  }
+
+  .trip-element {
+    height: 300px;
+  }
+
+  .study-element {
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .images-container {
+    .single-element {}
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .images-container {
+    .single-element {
+      .element-title {
+        font-size: 18px;
+
+      }
+
+      .trip-image {
+        width: 240px;
+        height: 150px;
+        filter: brightness(80%);
+      }
+
+      .study-element-image {
+        filter: brightness(80%);
+      }
+    }
+
+    .trip-element {
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .images-container {
+    .single-element {}
+  }
+}

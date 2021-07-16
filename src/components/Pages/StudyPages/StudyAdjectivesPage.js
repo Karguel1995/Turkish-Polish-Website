@@ -44,7 +44,7 @@ const AdjectivesHeader = function () {
             <h1>
                 Adjectives
             </h1>
-            <div className="wordsContainer">
+            <div className="images-container">
                 {adjectives}
             </div>
     </>
@@ -52,10 +52,10 @@ const AdjectivesHeader = function () {
 }
 
 const adjectives = adjectiveList.map(adjective => (
-    <div key={adjective.id} className="wordsSection">
-        <Link to={`/study/adjectives/${adjective.path}`} className="pictureContainer">
-            <img className="imgForSection"src={adjective.url} alt={adjective.name} />
-            <div className="word">
+    <div key={adjective.id} className="single-element study-element">
+        <Link to={`/study/adjectives/${adjective.path}`} >
+            <img className="study-element-image"src={adjective.url} alt={adjective.name} />
+            <div className="element-title">
                 <p>{adjective.name}</p>
             </div>
         </Link>

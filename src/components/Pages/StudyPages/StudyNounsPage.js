@@ -51,7 +51,7 @@ const NounsHeader = function () {
         <h1>
             Nouns
         </h1>
-        <div className="wordsContainer">
+        <div className="images-container">
             {nouns}
         </div>
     </>
@@ -59,10 +59,10 @@ const NounsHeader = function () {
 }
 
 const nouns = nounList.map(noun => (
-    <div key={noun.id} className="wordsSection">
-        <Link to={`/study/nouns/${noun.path}`} className="pictureContainer">
-            <img className="imgForSection"src={noun.url} alt={noun.name} />
-            <div className="word">
+    <div key={noun.id} className="single-element study-element">
+        <Link to={`/study/nouns/${noun.path}`} >
+            <img className="study-element-image"src={noun.url} alt={noun.name} />
+            <div className="element-title">
                 <p>{noun.name}</p>
             </div>
         </Link>

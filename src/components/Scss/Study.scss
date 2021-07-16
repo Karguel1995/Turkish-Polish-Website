@@ -49,47 +49,6 @@ i.fa-arrow-circle-down {
     width: 100%;
     flex-wrap: wrap;
 
-    .wordsSection {
-        margin: 15px 0;
-
-
-        .pictureContainer {
-            overflow: hidden;
-            position: relative;
-            width: 320px;
-            height: 200px;
-
-            .word {
-                position: absolute;
-                width: 100%;
-                height: 40px;
-                font-size: 22px;
-                line-height: 40px;
-                bottom: 0px;
-                text-align: center;
-                text-transform: uppercase;
-                color: white;
-            }
-
-            .imgForSection {
-                width: 320px;
-                height: 200px;
-                transition: .4s;
-            }
-
-            .imgForLessonSection {
-                width: 422.4px;
-                height: 264px;
-                transition: .4s;
-            }
-
-            img:hover {
-                transform: scale(110%);
-                filter: brightness(60%);
-            }
-        }
-    }
-
     .wordElement {
         background-color: $Chalk-lettering-3-hex;
         width: 330px;
@@ -162,57 +121,7 @@ i.fa-arrow-circle-down {
     }
 }
 
-table.greyGridTable {
-    margin: 0 auto;
-    border: 1px solid #FFFFFF;
-    width: 80%;
-    text-align: center;
-    border-collapse: collapse;
-
-    td,
-    th {
-        border: 1px solid #FFFFFF;
-        padding: 3px 4px;
-    }
-
-    tbody td {
-        font-size: 13px;
-    }
-
-    tr:nth-child(even) {
-        background: #EBEBEB;
-    }
-
-    thead {
-        background: $Chalk-lettering-4-hex;
-        border-bottom: 4px solid #FFFFFF;
-
-        th {
-            font-size: 15px;
-            font-weight: bold;
-            color: #FFFFFF;
-            text-align: center;
-            border-left: 2px solid #FFFFFF;
-        }
-
-        th:first-child {
-            border-left: none;
-        }
-    }
-}
-
 @media (max-width: 1200px) {
-    .wordsContainer {
-        .wordsSection {
-            .pictureContainer {
-                .imgForLessonSection {
-                    width: 320px;
-                    height: 200px;
-                }
-            }
-        }
-    }
-
     .containerForVerbs {
         .verbContainer {
             width: 200px;
@@ -249,31 +158,6 @@ table.greyGridTable {
     }
 
     .wordsContainer {
-        .wordsSection {
-            .pictureContainer {
-
-                width: 240px;
-                height: 150px;
-
-                .word {
-                    height: 50px;
-                    font-size: 18px;
-                    line-height: 50px;
-                }
-
-                .imgForSection {
-                    width: 240px;
-                    height: 150px;
-                    filter: brightness(80%);
-                }
-
-                .imgForLessonSection {
-                    width: 240px;
-                    height: 150px;
-                }
-            }
-        }
-
         .wordElement {
             width: 250px;
             height: 200px;
@@ -315,31 +199,6 @@ table.greyGridTable {
 }
 
 @media (max-width: 414px) {
-
-    // .studyNavigation {
-    //     background-color: $Chalk-lettering-4-hex;
-    //     height: 60px;
-
-    //     ul {
-    //         margin-left: 30px;
-    //         width: 70%;
-    //         list-style: none;
-    //         justify-content: space-around;
-    //         display: flex;
-    //         line-height: 60px;
-
-    //         li {
-    //             text-transform: uppercase;
-
-    //             a {
-    //                 font-size: 18px;
-    //                 color: white;
-    //                 text-decoration: none;
-    //                 padding: 17px 30px;
-    //             }
-    //         }
-    //     }
-    // }
 
     i.fa-arrow-circle-down {
         position: absolute;
@@ -389,32 +248,7 @@ table.greyGridTable {
     }
 
     .wordsContainer {
-        .wordsSection {
-            .pictureContainer {
-
-                width: 240px;
-                height: 150px;
-
-                .word {
-                    height: 50px;
-                    font-size: 18px;
-                    line-height: 50px;
-                }
-
-                .imgForSection {
-                    width: 240px;
-                    height: 150px;
-                    filter: brightness(80%);
-                }
-
-                .imgForLessonSection {
-                    width: 240px;
-                    height: 150px;
-                }
-            }
-        }
-
-        .wordElement {
+        d .wordElement {
             width: 250px;
             height: 200px;
             margin: 30px 0;

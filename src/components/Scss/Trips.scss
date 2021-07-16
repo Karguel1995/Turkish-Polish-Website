@@ -1,0 +1,29 @@
+/* Color Theme Swatches in Hex */
+$Chalk-lettering-1-hex: #BF907E;
+$Chalk-lettering-2-hex: #A63117;
+$Chalk-lettering-3-hex: #F2F2F2;
+$Chalk-lettering-4-hex: #595959;
+$Chalk-lettering-5-hex: #0D0D0D;
+
+.tripArticle {
+
+  .containerForPhotoFromTrip {
+    margin: 30px auto;
+    padding: 5px;
+    width: 650px;
+    height: 440px;
+    border-radius: 10px;
+    background-color: $Chalk-lettering-3-hex;
+
+    img.photoFromTrip {
+      width: 640px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 22px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+}
