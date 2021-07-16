@@ -68,7 +68,7 @@ const VerbsHeader = function () {
 }
 
 const verbs = verbList.map(verb => (
-    <div className="verbContainer">
+    <div className="verbContainer" key ={verb.id}>
         <Link 
         to={`/study/verbs/${verb.url}`} 
         className="verbElement">
