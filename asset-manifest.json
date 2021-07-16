@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Turkish-Polish-Website/static/css/main.d3487d22.chunk.css",
-    "main.js": "/Turkish-Polish-Website/static/js/main.abefb0e2.chunk.js",
-    "main.js.map": "/Turkish-Polish-Website/static/js/main.abefb0e2.chunk.js.map",
+    "main.css": "/Turkish-Polish-Website/static/css/main.f153cd2e.chunk.css",
+    "main.js": "/Turkish-Polish-Website/static/js/main.7a0c1e57.chunk.js",
+    "main.js.map": "/Turkish-Polish-Website/static/js/main.7a0c1e57.chunk.js.map",
     "runtime-main.js": "/Turkish-Polish-Website/static/js/runtime-main.f6586997.js",
     "runtime-main.js.map": "/Turkish-Polish-Website/static/js/runtime-main.f6586997.js.map",
     "static/js/2.831788eb.chunk.js": "/Turkish-Polish-Website/static/js/2.831788eb.chunk.js",
     "static/js/2.831788eb.chunk.js.map": "/Turkish-Polish-Website/static/js/2.831788eb.chunk.js.map",
     "index.html": "/Turkish-Polish-Website/index.html",
-    "static/css/main.d3487d22.chunk.css.map": "/Turkish-Polish-Website/static/css/main.d3487d22.chunk.css.map",
+    "static/css/main.f153cd2e.chunk.css.map": "/Turkish-Polish-Website/static/css/main.f153cd2e.chunk.css.map",
     "static/js/2.831788eb.chunk.js.LICENSE.txt": "/Turkish-Polish-Website/static/js/2.831788eb.chunk.js.LICENSE.txt",
-    "static/media/Header.scss": "/Turkish-Polish-Website/static/media/cap.3b1751e9.jpg",
+    "static/media/Header.scss": "/Turkish-Polish-Website/static/media/ist.3bda9b49.jpg",
     "static/media/aloeVera.e218501e.jpg": "/Turkish-Polish-Website/static/media/aloeVera.e218501e.jpg",
     "static/media/animals.67307e80.jpg": "/Turkish-Polish-Website/static/media/animals.67307e80.jpg",
     "static/media/appearance.3557cf9e.jpg": "/Turkish-Polish-Website/static/media/appearance.3557cf9e.jpg",
@@ -30,6 +30,9 @@
     "static/media/cabbage.81d25607.jpg": "/Turkish-Polish-Website/static/media/cabbage.81d25607.jpg",
     "static/media/cake.9243c777.jpg": "/Turkish-Polish-Website/static/media/cake.9243c777.jpg",
     "static/media/candies.f99158ed.jpg": "/Turkish-Polish-Website/static/media/candies.f99158ed.jpg",
+    "static/media/cappadocia.aea520c2.jpg": "/Turkish-Polish-Website/static/media/cappadocia.aea520c2.jpg",
+    "static/media/cappadociaBalloons.7c11d47d.jpg": "/Turkish-Polish-Website/static/media/cappadociaBalloons.7c11d47d.jpg",
+    "static/media/carTripToTurkey.146e1832.png": "/Turkish-Polish-Website/static/media/carTripToTurkey.146e1832.png",
     "static/media/carrot.456a34e7.jpg": "/Turkish-Polish-Website/static/media/carrot.456a34e7.jpg",
     "static/media/cat.6c7ce6c7.jpg": "/Turkish-Polish-Website/static/media/cat.6c7ce6c7.jpg",
     "static/media/cauliflower.4d9fddaa.jpg": "/Turkish-Polish-Website/static/media/cauliflower.4d9fddaa.jpg",
@@ -78,8 +81,10 @@
     "static/media/lemonade.1b38f597.jpg": "/Turkish-Polish-Website/static/media/lemonade.1b38f597.jpg",
     "static/media/lettuce.08f6b7c3.jpg": "/Turkish-Polish-Website/static/media/lettuce.08f6b7c3.jpg",
     "static/media/lion.e30c0fb9.jpg": "/Turkish-Polish-Website/static/media/lion.e30c0fb9.jpg",
+    "static/media/mausoleum.9c7b415a.jpg": "/Turkish-Polish-Website/static/media/mausoleum.9c7b415a.jpg",
     "static/media/milk.b29fdfcc.jpg": "/Turkish-Polish-Website/static/media/milk.b29fdfcc.jpg",
     "static/media/mint.26da6dba.jpg": "/Turkish-Polish-Website/static/media/mint.26da6dba.jpg",
+    "static/media/mosque.745c7ea1.jpg": "/Turkish-Polish-Website/static/media/mosque.745c7ea1.jpg",
     "static/media/mouse.e0748371.jpg": "/Turkish-Polish-Website/static/media/mouse.e0748371.jpg",
     "static/media/mushrooms.19f37f51.jpg": "/Turkish-Polish-Website/static/media/mushrooms.19f37f51.jpg",
     "static/media/nuts.fa66f83b.jpg": "/Turkish-Polish-Website/static/media/nuts.fa66f83b.jpg",
@@ -133,7 +138,7 @@
   "entrypoints": [
     "static/js/runtime-main.f6586997.js",
     "static/js/2.831788eb.chunk.js",
-    "static/css/main.d3487d22.chunk.css",
-    "static/js/main.abefb0e2.chunk.js"
+    "static/css/main.f153cd2e.chunk.css",
+    "static/js/main.7a0c1e57.chunk.js"
   ]
 }
