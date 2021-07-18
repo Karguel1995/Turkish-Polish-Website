@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Turkish-Polish-Website/static/css/main.f153cd2e.chunk.css",
-    "main.js": "/Turkish-Polish-Website/static/js/main.7a0c1e57.chunk.js",
-    "main.js.map": "/Turkish-Polish-Website/static/js/main.7a0c1e57.chunk.js.map",
+    "main.css": "/Turkish-Polish-Website/static/css/main.954ff8d3.chunk.css",
+    "main.js": "/Turkish-Polish-Website/static/js/main.d9f9dc80.chunk.js",
+    "main.js.map": "/Turkish-Polish-Website/static/js/main.d9f9dc80.chunk.js.map",
     "runtime-main.js": "/Turkish-Polish-Website/static/js/runtime-main.f6586997.js",
     "runtime-main.js.map": "/Turkish-Polish-Website/static/js/runtime-main.f6586997.js.map",
     "static/js/2.831788eb.chunk.js": "/Turkish-Polish-Website/static/js/2.831788eb.chunk.js",
     "static/js/2.831788eb.chunk.js.map": "/Turkish-Polish-Website/static/js/2.831788eb.chunk.js.map",
     "index.html": "/Turkish-Polish-Website/index.html",
-    "static/css/main.f153cd2e.chunk.css.map": "/Turkish-Polish-Website/static/css/main.f153cd2e.chunk.css.map",
+    "static/css/main.954ff8d3.chunk.css.map": "/Turkish-Polish-Website/static/css/main.954ff8d3.chunk.css.map",
     "static/js/2.831788eb.chunk.js.LICENSE.txt": "/Turkish-Polish-Website/static/js/2.831788eb.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/Turkish-Polish-Website/static/media/ist.3bda9b49.jpg",
     "static/media/aloeVera.e218501e.jpg": "/Turkish-Polish-Website/static/media/aloeVera.e218501e.jpg",
@@ -138,7 +138,7 @@
   "entrypoints": [
     "static/js/runtime-main.f6586997.js",
     "static/js/2.831788eb.chunk.js",
-    "static/css/main.f153cd2e.chunk.css",
-    "static/js/main.7a0c1e57.chunk.js"
+    "static/css/main.954ff8d3.chunk.css",
+    "static/js/main.d9f9dc80.chunk.js"
   ]
 }
