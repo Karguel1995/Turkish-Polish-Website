@@ -46,41 +46,33 @@ header {
 
 @media (max-width: 1090px) {
     header {
-        height: 240px;
-
+        height: 200px;
+        background-position: 0 -30px;
 
         .headerBorder {
-            height: 220px;
+            height: 180px;
             width: calc(100% - 20px);
         }
     }
 
     .alb,
     .carTripToTurkey {
-        background-position: 0 -60px;
+        background-position: 0 -40px;
     }
 
     @media (max-width: 768px) {
         header {
-            height: 160px;
             border-top-right-radius: 0;
 
             .headerBorder {
-                height: 140px;
-                width: calc(100% - 20px);
                 border-top-right-radius: 0;
             }
         }
     }
 
-    @media (max-width: 414px) {
+    @media (max-width: 540px) {
         header {
-            height: 180px;
             background-position: 0 0px;
-
-            .headerBorder {
-                height: 160px;
-            }
         }
 
         .alb,

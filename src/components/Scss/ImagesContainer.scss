@@ -3,6 +3,7 @@
   justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
+  margin-top: 20px;
 
   .single-element {
     margin: 15px 0;
@@ -33,7 +34,13 @@
       transition: .4s;
     }
 
-    img:hover {
+    .language-lesson-image {
+      width: 360px;
+      height: 225px;
+    }
+
+    .trip-image:hover,
+    .study-element-image:hover {
       transform: scale(110%);
       filter: brightness(60%);
     }
@@ -46,6 +53,11 @@
   .study-element {
     height: 200px;
   }
+
+  .language-lesson {
+    height: 225px;
+    margin: 10px;
+  }
 }
 
 
@@ -55,7 +67,17 @@
 
 @media (max-width: 1200px) {
   .images-container {
-    .single-element {}
+    .single-element {
+      .language-lesson-image {
+        width: 240px;
+        height: 150px;
+      }
+    }
+
+    .language-lesson {
+      height: 150px;
+      margin: 5px;
+    }
   }
 }
 
@@ -83,11 +105,5 @@
     .trip-element {
       height: 150px;
     }
-  }
-}
-
-@media (max-width: 414px) {
-  .images-container {
-    .single-element {}
   }
 }

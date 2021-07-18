@@ -8,19 +8,19 @@ import turkishFlag from '../../../images/turkishFlag.jpg'
 
 const Flags = function () {
     return (
-            <div className="wordsContainer">
-                <div className="wordsSection">
-                    <Link to={`/study/lessons/pl/`} className="pictureContainer">
-                        <img className="imgForLessonSection"src={polishFlag} alt="learnPolish" />
-                        <div className="word">
+            <div className="images-container">
+                <div className="single-element language-lesson">
+                    <Link to={`/study/lessons/pl/`}>
+                        <img className="language-lesson-image"src={polishFlag} alt="learnPolish" />
+                        <div className="element-title">
                             <p>Learn Polish</p>
                         </div>
                     </Link>
                 </div>
-                <div className="wordsSection">
-                    <Link to={`/study/lessons/tr/`} className="pictureContainer">
-                        <img className="imgForLessonSection"src={turkishFlag} alt="learnTurkish" />
-                        <div className="word">
+                <div className="single-element language-lesson">
+                    <Link to={`/study/lessons/tr/`}>
+                        <img className="language-lesson-image"src={turkishFlag} alt="learnTurkish" />
+                        <div className="element-title">
                             <p>Learn Turkish</p>
                         </div>
                     </Link>

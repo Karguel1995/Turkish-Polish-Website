@@ -60,7 +60,7 @@ const ToBe = () => {
 })
 
   return ( 
-    <div className="page">
+    <>
       <h1>To be - Być</h1>
       <VerbsContainer verbList={selectedVerbList} />
       <div className="verbExamples">
@@ -102,7 +102,7 @@ const ToBe = () => {
         </ul>
 
       </div>
-    </div>
+    </>
   );
 }
  

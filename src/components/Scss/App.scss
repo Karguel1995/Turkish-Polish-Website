@@ -33,7 +33,7 @@ body {
 
 @media (max-width: 1460px) {
     .app {
-        min-width: 800px;
+        min-width: auto;
         width: auto;
         left: 20px;
         right: 20px;
@@ -42,12 +42,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .app {
-        min-width: auto;
-    }
-}
-
-@media (max-width: 640px) {
     .app {
         top: 10px;
         left: 10px;
